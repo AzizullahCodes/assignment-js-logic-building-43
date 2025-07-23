@@ -351,49 +351,138 @@ _________________________ Answer ____________________________*/
 //     else{console.log('wrong password')}
 // }
 // else{console.log('name is wrong')}
-/*_______________________ Question no 1 ______________________
+/*_______________________ Question no 32 ______________________
+object 
+_________________________ Answer ____________________________*/
+// const student = {name : 'Aziz',
+//     class : 'Web development',
+//     rollNo : 234
+// }
+// console.log(student);
+// // hasOwnProperty
+// let check = student.hasOwnProperty('class');
+// console.log(check);
+// // overwrite property
+// student.name = 'Tnverr';
+// console.log(student);
+// // new property 
+// student.email = 'aziz@gmail.com';
+// console.log(student);
+// // delete 
+// delete student.rollNo;
+// console.log(student)
 
+
+/*_______________________ Question no 33 ______________________
+localstorage
+_________________________ Answer ____________________________*/
+// let student = {name : 'Aziz',
+//     age : 23,
+//     course : 'Web Development'
+// }
+// console.log(student, typeof student);
+// // store in local storage 
+// let convertString = JSON.stringify(student);
+// console.log(convertString,typeof convertString);
+
+// localStorage.setItem('task',convertString);
+// let getName = localStorage.getItem('task');
+// console.log(getName)
+// let getFromLocalStorage = JSON.parse(getName);
+// delete getFromLocalStorage.age;
+// console.log(getFromLocalStorage)
+// localStorage.clear();
+
+/*_______________________ Question no 34 ______________________
+delet one of two local storage
 _________________________ Answer ____________________________*/
 
+    // Set two objects in localStorage
+// let student = {
+//   name: "Aziz",
+//   course: "JavaScript",
+//   rollNo: 123
+// };
+
+// let teacher = {
+//   name: "Shahzad",
+//   subject: "JavaScript"
+// };
+
+// localStorage.setItem("studentData", JSON.stringify(student));
+// localStorage.setItem("teacherData", JSON.stringify(teacher));
 
 
 
+// // 1. Get studentData
+// let studentObj = JSON.parse(localStorage.getItem("studentData"));
 
-/*_______________________ Question no 1 ______________________
+// // 2. Remove all its properties
+// for (let key in studentObj) {
+//   delete studentObj[key];
+// }
 
+// // 3. Save empty object back
+// localStorage.setItem("studentData", JSON.stringify(studentObj));
+
+
+/*_______________________ Question no 35 ______________________
+delet one object from two stored objects in localstorage
 _________________________ Answer ____________________________*/
+// let shop = {sugar : 234,
+//     ghee: 443
+// }
+
+// let bazar = {carrot : 234,
+//     potato: 34,
+// }
+
+// localStorage.setItem('shopItem',JSON.stringify(shop));
+// localStorage.setItem('bazarItem',JSON.stringify(bazar))
 
 
+// let getshop = localStorage.getItem('shopItem');
+// getshop = JSON.parse(getshop);
+// for(let key in getshop){delete getshop[key]}
 
+// localStorage.setItem('shopItem',JSON.stringify(getshop))
 
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 36 ______________________
+delete specifice form one of two subjects
 _________________________ Answer ____________________________*/
+// let shop = {sugar : 234,
+//     ghee: 443
+// }
+
+// let bazar = {carrot : 234,
+//     potato: 34,
+// }
+
+// localStorage.setItem('shopItem',JSON.stringify(shop));
+// localStorage.setItem('bazarItem',JSON.stringify(bazar))
+
+
+// let getshop = localStorage.getItem('shopItem');
+// getshop = JSON.parse(getshop);
+//   delete getshop.ghee;
+
+// localStorage.setItem('shopItem',JSON.stringify(getshop))
 
 
 
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 37 ______________________
+removeItem( )
 _________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
+// const student = {name : 'Aziz',
+//     rollNo : 3232,
+//     class : 'web development'
+// }
+// localStorage.setItem('data',JSON.stringify(student))
+// const teacher = {name :'saleem',
+//     subject : 'urdu'
+// }
+// localStorage.setItem('teacherDetail',JSON.stringify(teacher));
+// localStorage.removeItem('teacherDetail')
 /*_______________________ Question no 1 ______________________
 
 _________________________ Answer ____________________________*/ 
