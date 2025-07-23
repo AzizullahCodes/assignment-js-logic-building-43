@@ -187,105 +187,170 @@ _________________________ Answer ____________________________*/
 // let final = calculating(2);
 // console.log(final);
 
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 17 ______________________
+enhanced object literals
 _________________________ Answer ____________________________*/
+// let name = "Aziz";
+// let age = 23;
+// let course = 'web development';
+// let studentDetails = {name,
+//     age,
+//     course,
+// }
+// console.log(studentDetails);
 
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 18 ______________________
+object destructuring 
 _________________________ Answer ____________________________*/
+// const student = {name :'Aziz',
+//     age : 23,
+//     course : 'web development'
+// }
+// const {name,age,course} = student;
+// console.log(name);
+// console.log(age);
+// console.log(course)
 
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 19 ______________________
+array destructuring
 _________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// let [name,age,course] = ['aziz',23,'web development'];
+// console.log(name);
+// console.log(age);
+// console.log(course);
+/*_______________________ Question no 20 ______________________
+itrators of and in 
 _________________________ Answer ____________________________*/
+// let fruits = ['apple','banana','mango'];
+// console.log(fruits)
+// for(let identity of fruits){console.log(identity);
+// }
 
+// for(let identity in fruits){console.log(identity)}
 
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 21 ______________________
+get the data of object by for loop
 _________________________ Answer ____________________________*/
+// const student = {name :'Aziz',
+//     class :'Matric',
+//     age : 20
+// }
+// for(let key in student){console.log(`${key} : ${student[key]}`)};
+// let len =Object.keys(student).length;
+// console.log(len)
 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// const shop = {soap : 20,
+//     sugar : 3900,
+//     tea : 45
+// }
+// const newObjtect = {...student,...shop};
+// console.log(newObjtect)
+// let fruits = ['apple','banana'];
+// let moreFruits = ['orange','guava'];
+// let merging = [...fruits,...moreFruits];
+// console.log(merging)
+/*_______________________ Question no 22 ______________________
+date()
 _________________________ Answer ____________________________*/
+// let current =  new Date();
+// console.log(current,typeof current);
+// current.setFullYear(2005);
+// current.setMonth(2-1);
+// current.setHours(5);
+// current.setMinutes(32);
+// current.setSeconds(2);
+// current.setMilliseconds(434);
+// console.log(current)
 
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 23 ______________________
+leap year 
 _________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// let year = 2000
+// if((year % 4 == 0 && year % 100 !== 0)||(year % 400 == 0)){console.log('leap year')}
+// else{console.log('not leap year')}
+/*_______________________ Question no 24 ______________________
+array method
 _________________________ Answer ____________________________*/
+// let fruits = ['apple','mango','carrot','raddish'];
+// // push
+// let pus = fruits.push('guava');
+// console.log(fruits);
+// console.log(pus);
+// // unshift()
+// let un = fruits.unshift('malta');
+// console.log(fruits);
+// console.log(un);
+// // pop()
+// let pop = fruits.pop();
+// console.log(pop);
+// console.log(fruits);
+// // shift()
+// let shift = fruits.shift();
+// console.log(fruits);
+// console.log(shift);
+// // slice();
+// let slice = fruits.slice(0,3);
+// console.log(slice)
+// // splice()
+// let spl = fruits.splice(2,1,'banana');
+// console.log(fruits);
+// console.log(spl);
 
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 25 ______________________
+reverse array by for loop
 _________________________ Answer ____________________________*/
+// let fruits = ['apple','banana','mango','grapes'];
+// console.log(fruits)
+// let newArray= [];
+// for(let i = fruits.length-1 ; i >=0;i--){newArray.push(fruits[i])}
+// console.log(newArray);
 
 
+// let fruits = ['apple','banana','mango','grapes'];
+// let newArray = fruits.reverse();
+// console.log(newArray)
 
 
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 26 ______________________
+reverse string 
 _________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
+//  let string = 'zamir is her friend';
+//  let srt = '';
+// for(i = string.length-1;i >= 0;i--){srt = srt + string[i]}
+// console.log(srt)
+/*_______________________ Question no 27 ______________________
+reverse array of number
 _________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// let num = [50,70,80,90];
+// let newArray= [];
+// for(let i = num.length-1; i >=0; i--){newArray.push(num[i])}
+// console.log(newArray);
+/*_______________________ Question no 28 ______________________
+slice
 _________________________ Answer ____________________________*/
+// let fruits = ['apple','banana','mango','carrot','guvava'];
+// let newArray = fruits.slice(fruits.length-2);
+// console.log(newArray);
 
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 29 ______________________
+loose and strict not equal to 
 _________________________ Answer ____________________________*/ 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// let num = prompt('enter number');
+// let condition = (num !== 2)?('ok'):('not ok');
+// console.log(condition);
+/*_______________________ Question no 31 ______________________
+stop programm when condition false and reply
 _________________________ Answer ____________________________*/
-
-
-
+// let name = prompt('enter your name');
+// name = name.toLowerCase();
+// if(name === 'aziz'){let password = prompt('enter password');
+//     if(password === '1234'){let balance = prompt('enter your balance');
+//         if(balance >= 200){console.log('you can withdraw')}
+//         else(console.log('your balance is low'))
+//     }
+//     else{console.log('wrong password')}
+// }
+// else{console.log('name is wrong')}
 /*_______________________ Question no 1 ______________________
 
 _________________________ Answer ____________________________*/
