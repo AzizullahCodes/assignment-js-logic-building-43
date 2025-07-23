@@ -77,65 +77,115 @@ _________________________ Answer ____________________________*/
 // let username = 'Aziz';
 // let condition = (isLoggedIn)?(`Welcome, ${username}`): (`Plz log in`);
 // console.log(condition)
-/*_______________________ Question no 1 ______________________
+/*_______________________ Question no 8 ______________________
+
+Create a function that takes any number of words and joins them into a sentence.
+
+📌 Example:
+
+makeSentence("JavaScript", "is", "awesome"); // Output: "JavaScript is awesome"
 
 _________________________ Answer ____________________________*/
+// let resting = (...restParameter)=>{let sentence = '';
+//     for(let key of restParameter){ sentence = sentence + ' ' +key}
+//     console.log(sentence)
+  
+// }
+// resting('Javascript','is','awesome')
 
+/*_______________________ Question no 9 ______________________
+Filter Numbers Greater Than 10
+Create a function that takes multiple numbers and returns only those greater than 10.
 
+📌 Example:
+filterGreaterThan10(5, 12, 8, 20, 3); // Output: [12, 20]
+_________________________ Answer ____________________________*/
+// let num = (...restParameter) =>{let requirement = [];
+//     for(let key of restParameter){if(key > 10){requirement.push(key)}
+// }
+// return requirement;
+// }
+// console.log(num(5,12,8,20,30));
+// console.log(num(2,3,4))
+/*_______________________ Question no 10 ______________________
+ Multiply All Numbers
+Create a function that multiplies all given numbers and returns the product.
+📌 Example:
+multiplyAll(2, 3, 4); // Output: 24
+_________________________ Answer ____________________________*/
+// const multiplication = (...restPractice) =>{let output = 1;
+//     for(let key of restPractice){ output = output * key;}
+//     return output;
+// }
 
-/*_______________________ Question no 1 ______________________
+// let ans = multiplication(2,3,4);
+// console.log(ans)
+/*_______________________ Question no 11 ______________________
+ Separate Even and Odd Numbers
+Create a function that takes multiple numbers and returns two arrays: one for even numbers, 
+one for odd numbers.
+
+📌 Example:
+separateEvenOdd(1, 2, 3, 4, 5, 6);
+// Output: { even: [2, 4, 6], odd: [1, 3, 5] }
+_________________________ Answer ____________________________*/
+// let seperating = (...resting ) => {let a = [];
+//     let b = [];
+//     for(let key of resting){if(key % 2 == 0){a.push(key)}
+// else{b.push(key)}}
+// console.log(a);
+// console.log(b);
+// };
+// seperating(1,2,3,4,5,6)
+
+/*_______________________ Question no 12 ______________________
+ Show First Argument and Count of Rest
+Create a function where the first argument is a title, and the rest are names. Return the title and
+ how many names were given.
+
+📌 Example:
+showTitleAndCount("Teacher", "Ali", "Sara", "John");
+// Output: "Teacher has 3 students"
 
 _________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// const showTitleAndCount = (...rest) =>{let len = rest.length;
+//     let result = len - 1;
+//     console.log(rest);
+//     console.log(`Teacher has ${result} students`)
+// };
+// showTitleAndCount('Teacher','Ali','Sara','John');
+// showTitleAndCount('Sandleeb','knvl','klsoom','zrnab','gulnaz','zrgheen')
+/*_______________________ Question no 13 ______________________
+ Check Temperature
+If temperature is more than 30, show "Hot", otherwise "Cool".
 _________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// let temperature = prompt('enter temperature');
+// let condition = (temperature > 30)?('Hot'):('cool');
+// console.log(condition)
+/*_______________________ Question no 14 ______________________
+Check Character Length
+If a word has more than 5 letters, show "Long", else show "Short".
 _________________________ Answer ____________________________*/
+// let word = prompt('enter word');
+// let leng = word.length;
+// let ternary = (leng > 5)?('Long'):('short');
+// console.log(ternary);
 
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 15 ______________________
+ Check Divisibility
+Check if a number is divisible by 5. If yes, show "Yes", else "No".
 _________________________ Answer ____________________________*/ 
-
-
-
-/*_______________________ Question no 1 ______________________
-
+// let num  = Number(prompt('enter number'));
+// let ternary = (num % 5 == 0)?('yes'):('no');
+// console.log(ternary);
+/*_______________________ Question no 16 ______________________
+default parameter 
 _________________________ Answer ____________________________*/
-
+// const calculating = (a,b = 5) =>{let ans = a + b;
+//     return ans;
+// };
+// let final = calculating(2);
+// console.log(final);
 
 
 /*_______________________ Question no 1 ______________________
