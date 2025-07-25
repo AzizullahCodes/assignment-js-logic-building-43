@@ -483,58 +483,183 @@ _________________________ Answer ____________________________*/
 // }
 // localStorage.setItem('teacherDetail',JSON.stringify(teacher));
 // localStorage.removeItem('teacherDetail')
-/*_______________________ Question no 1 ______________________
+/*_______________________ Question no 38 ______________________
+ Save a User Profile
+Question:
+Create an object named userProfile with properties: name, age, and email. Save it in localStorage under the key profile.
+
+Expected Output (in localStorage):
+A key named profile that contains the full user object in string format (JSON).
 
 _________________________ Answer ____________________________*/ 
+// let name = 'Aziz';
+// let age = 30;
+// let email = 'azizullahcodes42432@gmail.com';
+// const userProfile = {name,
+//     age,
+//     email
+// }
+// console.log(userProfile);
+// localStorage.setItem('profile',JSON.stringify(userProfile));
 
+/*_______________________ Question no 39 ______________________
+ Update a Property in Stored Object
+Question:
+Using the data from Task 1 (key: profile), update the email property to a new email address without deleting other data.
 
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
-
-_________________________ Answer ____________________________*/
-
-
-
-
-
-/*_______________________ Question no 1 ______________________
+Expected Output (in localStorage):
+The profile key should still exist, but the email value inside should be changed.
 
 _________________________ Answer ____________________________*/
+// let name = 'Aziz';
+// let age = 30;
+// let email = 'azizullahcodes42432@gmail.com';
+// const userProfile = {name,
+//     age,
+//     email
+// }
+// userProfile.email = 'aziz.com';
+// console.log(userProfile);
+// localStorage.setItem('profile',JSON.stringify(userProfile));
 
+/*_______________________ Question no 40 ______________________
+Remove One Property from Stored Object
+Question:
+From the saved object in profile, remove the age property only and update the object in localStorage.
 
+Expected Output (in localStorage):
+Key profile remains, but age should no longer be part of the stored object.
+_________________________ Answer ____________________________*/
+// let name = 'Aziz';
+// let age = 30;
+// let email = 'azizullahcodes42432@gmail.com';
+// const userProfile = {name,
+//     age,
+//     email
+// }
+// userProfile.email = 'aziz.com';
+// console.log(userProfile);
+// localStorage.setItem('profile',JSON.stringify(userProfile));
+// let get = localStorage.getItem('profile');
+// get = JSON.parse(get);
+// delete get.age;
 
+// localStorage.setItem('profile',JSON.stringify(get));
+/*_______________________ Question no 41 ______________________
+Store and Display Multiple Tasks
+Question:
+Create a to-do list app where you can add multiple tasks (as strings) to an array and store 
+it under the key tasks. Every time a new task is added, it should be saved in the same array.
 
-
-/*_______________________ Question no 1 ______________________
+Expected Output (in localStorage):
+A key tasks with an array of strings like:
+["Buy milk", "Complete assignment", "Call friend"]
 
 _________________________ Answer ____________________________*/
+// saveData( )
+// function saveData(){let getInput = document.getElementById('userinput').value;
+//  if(getInput == ''){alert('plz enter task')};
+//  let getFromLocalStorage = localStorage.getItem('task');
+//     if(getFromLocalStorage == null){getFromLocalStorage = []}
+//     else{getFromLocalStorage = JSON.parse(getFromLocalStorage)}
 
+//     getFromLocalStorage.push(getInput);
+//     getFromLocalStorage = JSON.stringify(getFromLocalStorage);
+//     localStorage.setItem('task',getFromLocalStorage);
+//     document.getElementById('userinput').value = '';
+//     document.getElementById('userinput').focus();
 
+// }
 
+/*_______________________ Question no 42 ______________________
+spread operator array
+_________________________ Answer ____________________________*/
+// let array1 = ['mango','apple'];
+// let array2 = ['guava','banana'];
+// let newArray = [...array1,...array2];
+// console.log(newArray)
 
-/*_______________________ Question no 1 ______________________
+/*_______________________ Question no 43 ______________________
+spread operator merging object 
+_________________________ Answer ____________________________*/
+// const student = {name : 'Aziz',
+//     class : 'matric'
+// }
+// const teacher = {name : 'Ahmed',
+//     mastery : 'web development'
+// }
+// const newObjtect = {...student,...teacher};
+// console.log(newObjtect)
 
+/*_______________________ Question no 44 ______________________
+math.max() and spread operator
+_________________________ Answer ____________________________*/
+// let num = [43,555,3,2,66];
+// let maxNumber = Math.max(...num);
+// console.log(maxNumber);
+/*_______________________ Question no 45 ______________________
+copy of array by spread operator
 _________________________ Answer ____________________________*/
 
+// let fruits = ['mango','apple'];
+// console.log(fruits);
+// let newFruits = [...fruits];
+// console.log(newFruits)
 
-
-
-/*_______________________ Question no 1 ______________________
-
+/*_______________________ Question no 46 ______________________
+copy of object by spread operator
 _________________________ Answer ____________________________*/
+const student = {name : 'aziz',
+     class : 'matric',
+     school :'abc',
+     birthDetails : {district :'Mianwali',
+         province : 'punjab'
+     }
+ }
+ console.log(student);
+ const newStudent = {...student};
+console.log(newStudent)
+
+/*_______________________ Question no 47 ______________________
+add item in array by spread operator
+_________________________ Answer ____________________________*/
+ let fruits = ['apple','banana'];
+
+ let newFruits = ['orange','guava',...fruits,'melon'];
+console.log(newFruits);
+
+/*_______________________ Question no 48 ______________________
+add item in object by spread operator 
+_________________________ Answer ____________________________*/
+// let student = {name : 'Aziz'}
+// let fullStudent = {...student,age : 29,
+//     class :'Master'
+// }
+// console.log(fullStudent);
 
 
+
+/*_______________________ Question no 49 ______________________
+spread out elements by spread operator
+_________________________ Answer ____________________________*/
+// let num = [1,3,4,5];
+// console.log(...num);
+
+// let fruits = ['fruits','apple'];
+// console.log(...fruits);
+
+/*_______________________ Question no 50 ______________________
+deep copy of object 
+_________________________ Answer ____________________________*/
+// const student = {name : 'aziz',
+//     age :23,
+//     birthDetails : {district : 'Mianwali',
+//         city :'Kmr Mushani'
+//     }
+// }
+// // shallow copy 
+// let newStudent = {...student};
+// console.log(newStudent);
+// // deep copy 
+// const obj = JSON.parse(JSON.stringify(student));
+// console.log(obj)
